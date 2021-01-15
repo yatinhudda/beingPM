@@ -24,11 +24,17 @@ const card = (props) => {
                 </p>
             </div>
 
-            <div className = "link">
-            <a>Listen on Spotify  </a>
-            <a href = {props.redirectlink}></a>
-
+            {/* <div className = "link">
+                <a href = {props.redirectlink}>
+                    <button className = "buttonlink">Listen on Spotify</button>
+                </a>
+            </div> */}
+            <div>
+            <a href = {props.redirectlink}>
+                <button className = "buttonlink">Listen on Spotify</button>
+            </a>
             </div>
+            
 
         </div>
     );

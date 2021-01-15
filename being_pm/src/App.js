@@ -42,6 +42,8 @@ function App() {
   return (
     <div className="App">
       <Navbar name = {usersState.persons[0].name }/>
+      <div className = "outer">
+      
       <Content
         heading = {usersState.content[0].heading}
         imagelink = {usersState.content[0].imagelink}
@@ -62,6 +64,8 @@ function App() {
         tag = {usersState.content[2].tag}
         text = {usersState.content[2].text}
         redirectlink = {usersState.content[2].redirectlink}/>
+      
+      </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@
     box-shadow: 0 2px 10px rgb(155, 155, 155);
     padding: 16px;
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     align-content: center;
     /* position: relative;
     background-color: white; */
@@ -26,4 +26,9 @@
     display: flex;
     align-content: center;
     /* background: crimson; */
+}
+.saved{
+    float: right;
+    margin-left: 120px;
+    margin-top: 6px;
 }

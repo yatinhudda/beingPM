@@ -8,7 +8,7 @@ function App() {
 
     const [usersState] = useState({
       persons : [
-        {email : 'yatinchaudhary72@gmail.com', name : 'Yatin Hudda'},
+        {email : 'yatinchaudhary72@gmail.com', name : 'Yatin'},
         {email : 'abc@gmail.com', name : 'Ankit'},
         {email : 'heyPM@gmail.com', name : 'heyPM'},
         {email : 'anoopG@gmail.com', name : 'Anoop'}

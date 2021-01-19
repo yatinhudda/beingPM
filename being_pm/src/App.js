@@ -1,6 +1,8 @@
 import './App.css';
 import Navbar from './Navbar/Navbar';
 import Content from './Content/Content';
+import Saved from './Saved/Saved';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import React, { useState } from 'react';
  
@@ -40,9 +42,15 @@ function App() {
 
 
   return (
+    <Router>
     <div className="App">
       <Navbar name = {usersState.persons[0].name }/>
       <div className = "outer">
+      
+      <Route path = '/Saved/Saved' component = {Saved}/>
+
+      <Route >
+
       
       <Content
         heading = {usersState.content[0].heading}
@@ -64,9 +72,14 @@ function App() {
         tag = {usersState.content[2].tag}
         text = {usersState.content[2].text}
         redirectlink = {usersState.content[2].redirectlink}/>
+
+      </Route>
+
+      
       
       </div>
     </div>
+    </Router>
   );
 }
 

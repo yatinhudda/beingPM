@@ -4,11 +4,21 @@
     border: 2px solid rgb(236, 238, 240);
     box-shadow: 0 2px 10px rgb(155, 155, 155);
     padding: 16px;
+    /* display: flex; */
+    /* flex-direction: row;
+    align-content: center;
+    position: relative;
+    background-color: white; */
+    /* align-content: center; */
+}
+
+.inner-nav{
+    max-width: 500px;
     display: flex;
     flex-direction: row;
     align-content: center;
-    /* position: relative;
-    background-color: white; */
+    /* background-color: cyan; */
+    margin: auto;
 }
 
 .profile{
@@ -29,6 +39,6 @@
 }
 .saved{
     float: right;
-    margin-left: 120px;
+    margin-left: 130px;
     margin-top: 6px;
 }

@@ -1,0 +1,14 @@
+.saved-div{
+    height:80px;
+    width: 100%;
+    margin:auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.saved-div h4{
+    color: rgb(155, 155, 155);
+}

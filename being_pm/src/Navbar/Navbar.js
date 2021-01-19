@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { FaBookmark } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,14 +17,18 @@ const navbar = (props) => {
 
     return (
         <div className = "Navbar">
-            <div className = "profile" onClick = {profileClick}>
+            <div className = "inner-nav">
+                <div className = "profile" onClick = {profileClick}>
 
-            </div>
-            <div className = "profile-name">
-                <h2>Hello, {props.name}</h2>
-            </div>
-            <div className = "saved" onClick = {savedIconClick}>
-                <h5> <FaBookmark/>  Saved</h5>
+                </div>
+                <div className = "profile-name">
+                    <h2>Hello, {props.name}</h2>
+                </div>
+                <Link to = './Saved/Saved'>
+                <div className = "saved" onClick = {savedIconClick}>
+                    <h5> <FaBookmark/>  Saved</h5>
+                </div>
+                </Link>
             </div>
         </div>
     );

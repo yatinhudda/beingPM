@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Content.css';
 import ReactPlayer from 'react-player';
 import { FaBookmark, FaRegBookmark } from 'react-icons/fa';
 
 const card = (props) => {
+
+    // const [savedState] = useState({
+    //     isSaved: false
+    // });
 
     const toggleSaved = () => {
         console.log("Saved state changed");
@@ -43,7 +47,8 @@ const card = (props) => {
                     <a>{props.tag}</a>
                 </div>
                 <div className = "saved" onClick = {toggleSaved}>
-                    <FaRegBookmark/> 
+                    {/* {savedState.saved ? <FaBookmark/> : <FaRegBookmark/>}  */}
+                    <FaRegBookmark/>
                 </div>
             </div>
 

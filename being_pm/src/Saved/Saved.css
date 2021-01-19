@@ -23,13 +23,16 @@
     justify-content: left;
     margin:auto;
     margin-left: 20px;
-
 }
 .saved-buttons Button{
     display: inline-block;
     margin: 5px;
     color: rgb(243, 114, 114);
     border:1px solid rgb(243, 114, 114);
-    border-radius: 3px;
-    font-size: large;
+    border-radius: 5px;
+    /* font-size: small; */
+}
+.saved-buttons h5{
+    margin-left: 95px;
+    color: rgb(155, 155, 155);
 }

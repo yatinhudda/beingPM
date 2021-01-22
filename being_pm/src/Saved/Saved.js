@@ -1,6 +1,7 @@
 import React from 'react';
 import './Saved.css';
 import { FaRetweet} from 'react-icons/fa';
+// import Profile from 'src/Profile/Profile';
 
 const savedPage = () =>{
 

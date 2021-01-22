@@ -18,9 +18,11 @@ const navbar = (props) => {
     return (
         <div className = "Navbar">
             <div className = "inner-nav">
+                <Link to = './Profile/Profile'>
                 <div className = "profile" onClick = {profileClick}>
 
                 </div>
+                </Link>
                 <div className = "profile-name">
                     <h2>Hello, {props.name}</h2>
                 </div>
